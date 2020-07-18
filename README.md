@@ -1,2 +1,2 @@
-# data_professionals
-Analysis on Trends of Data Professionals (2017 &amp; 2018)
+# Analysis on various topics
+This repository was created to practice python, SQL and excel on analyzing and visualizing data
