@@ -124,3 +124,29 @@ mycursor.execute(add_performance, (5, 13, 8, 5, round(18/8.0, 2), 236, 63, False
 mycursor.execute(add_performance, (1, 9, 8, 5, round(14/8.0, 2), 182, 59, False, True, 12, 1, 8))
 db.commit()
 
+# adding game 9
+mycursor.execute(add_performance, (6, 17, 18, 4, round(21/18.0, 2), 285, 61, True, False, 2, 4, 2))
+mycursor.execute(add_performance, (4, 11, 16, 1, round(12/16.0, 2), 136, 52, False, False, 2, 4, 4))
+mycursor.execute(add_performance, (3, 14, 17, 2, round(16/17.0, 2), 236, 52, False, False, 2, 4, 7))
+mycursor.execute(add_performance, (2, 9, 16, 8, round(17/16.0, 2), 158, 41, False, False, 2, 4, 5))
+
+# adding game 10
+mycursor.execute(add_performance, (6, 13, 15, 3, round(16/15.0, 2), 190, 73, True, False, 2, 5, 11))
+mycursor.execute(add_performance, (5, 11, 17, 5, round(16/17.0, 2), 184, 62, False, False, 2, 5, 3))
+mycursor.execute(add_performance, (4, 13, 13, 2, round(15/13.0, 2), 184, 46, False, False, 2, 5, 4))
+mycursor.execute(add_performance, (3, 8, 18, 2, round(10/18.0, 2), 175, 41, False, False, 2, 5, 2))
+mycursor.execute(add_performance, (2, 6, 16, 3, round(9/16.0, 2), 122, 40, False, False, 2, 5, 5))
+
+# adding game 11
+mycursor.execute(add_performance, (6, 20, 15, 4, round(24/15.0, 2), 258, 72, True, False, 6, 3, 3))
+mycursor.execute(add_performance, (5, 11, 18, 10, round(21/18.0, 2), 156, 41, False, False, 6, 3, 10))
+mycursor.execute(add_performance, (4, 12, 15, 3, round(15/15.0, 2), 166, 52, False, False, 6, 3, 6))
+mycursor.execute(add_performance, (3, 9, 15, 5, round(14/15.0, 2), 157, 48, False, False, 6, 3, 7))
+mycursor.execute(add_performance, (2, 13, 21, 7, round(20/21.0, 2), 201, 49, False, False, 6, 3, 9))
+
+# adding game 12
+mycursor.execute(add_performance, (6, 22, 16, 6, round(28/16.0, 2), 281, 61, True, True, 7, 6, 6))
+mycursor.execute(add_performance, (5, 10, 18, 7, round(17/18.0, 2), 171, 38, False, True, 7, 6, 9))
+mycursor.execute(add_performance, (4, 21, 14, 4, round(25/14.0, 2), 273, 59, False, True, 7, 6, 10))
+mycursor.execute(add_performance, (3, 18, 15, 7, round(25/15.0, 2), 247, 75, False, True, 7, 6, 7))
+mycursor.execute(add_performance, (2, 6, 17, 4, round(10/17.0, 2), 83, 26, False, True, 7, 6, 5))
