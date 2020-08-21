@@ -97,8 +97,10 @@ mycursor.execute('SELECT * '
 name_list = []
 # creating a player list to iterate through
 
-for name in mycursor: name_list.append(name[1])
-for player in name_list: print(person_stat(player))
+for name in mycursor:
+    name_list.append(name[1])
+for player in name_list:
+    print(person_stat(player))
 
 # ADDING STATS
 # adding_game 1
