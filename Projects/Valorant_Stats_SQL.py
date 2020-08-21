@@ -1,9 +1,13 @@
 import mysql.connector
+import os
+
+user_name = os.environ.get('DB_USER')
+user_pass = os.environ.get('DB_PASS')
 
 db = mysql.connector.connect(
     host='127.0.0.1',
-    user='tw7366',
-    passwd='Tlsxodn1',
+    user=user_name,
+    passwd=user_pass,
     database='valorant_games')
 
 mycursor = db.cursor()
@@ -49,7 +53,7 @@ mycursor.execute(add_agent, ('Sova',))
 mycursor.execute(add_agent, ('Viper',))
 db.commit()
 
-# Keeping track of victories
+# track victories
 mycursor.execute('ALTER TABLE performance '
                  'ADD COLUMN (WON Bool)')
 
@@ -65,10 +69,9 @@ mycursor.execute('ALTER TABLE performance '
                  'ADD CONSTRAINT id FOREIGN KEY (agent_id) '
                  'REFERENCES agents_table (id)')
 
-add_performance = 'INSERT INTO performance (player_id, K, D, A, KDA, combat_score, econ_rating, MVP, WON, ' \
-                  'Attack, Defense, agent_id)' \
+add_performance = 'INSERT INTO performance (player_id, K, D, A, KDA, combat_score, ' \
+                  'econ_rating, MVP, WON, Attack, Defense, agent_id)' \
                   'VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)'
-
 
 # useful functions
 def person_stat(player):
@@ -80,9 +83,9 @@ def person_stat(player):
                       'ON agents_table.id = agent_id '
                       'JOIN player_list '
                       'ON player_list.id = player_id '
-                      'WHERE player_list.name = "{}" '
-                      'GROUP BY agents_table.name').format(player)
-    mycursor.execute(execution_code)
+                      'WHERE player_list.name = %s '
+                      'GROUP BY agents_table.name')
+    mycursor.execute(execution_code, (player,))
     for line in mycursor:
         print(line)
     return ''
@@ -93,12 +96,9 @@ mycursor.execute('SELECT * '
 
 name_list = []
 # creating a player list to iterate through
-for name in mycursor:
-    name_list.append(name[1])
 
-# getting stats of each player
-for player in name_list:
-    print(person_stat(player))
+for name in mycursor: name_list.append(name[1])
+for player in name_list: print(person_stat(player))
 
 # ADDING STATS
 # adding_game 1
