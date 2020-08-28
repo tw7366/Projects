@@ -9,7 +9,7 @@
 
 ------------
 ## __About__
-  This repository was created to track my progress in data analysis and machine learning using python. While it demonstrats my capability, it also keeps me motivated and inspired.
+  This repository was created to track my progress in data analysis and machine learning using python. While it demonstrates my capability, it also keeps me motivated and inspired.
   
   
 ------------
