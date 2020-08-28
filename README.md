@@ -5,7 +5,7 @@
 * [Web Scraping](#web-scraping)
 * [Data Cleansing & Debugging](#data-cleansing)
 * [Machine Learning](#machine-learning)
-
+* [Data Analysis & Visualization](#data-analysis)
 
 ------------
 ## __About__
@@ -38,6 +38,7 @@ __Notebook__ | __Description__ | __Library__ | __Source__
 [Covid-19](https://github.com/tw7366/Projects/blob/master/Projects/Covid-19.ipynb) | Performed light data cleaning and Debugging to fix graphs and functions | pandas, numpy, seaborn, matplotlib, collections, datetime | [Covid-19 Activity](https://data.world/covid-19-data-resource-hub/covid-19-case-counts)
 [Price of used cars](https://github.com/tw7366/Projects/blob/master/Projects/Price%20of%20used%20cars.ipynb) | Evaluated and selected relevant information from the huge volume of data, then more preprocessing was applied. This was probably the messiest data I had to deal with. | collections, pandas, numpy, sklearn |  [Kaggle - Used cars database](https://www.kaggle.com/orgesleka/used-cars-database)
 
+
 ------------
 ## __Machine Learning__
 __Project__ | __Description__ | __Topic__ | __Library__ | __Source__
@@ -46,3 +47,10 @@ __Project__ | __Description__ | __Topic__ | __Library__ | __Source__
 [Google Stock Pricing](https://github.com/tw7366/Projects/blob/master/Projects/Google%20Stock%20Pricing%20-%20Prediction%20using%20regression.ipynb) | Created a OHLC chart to see the past trend and trained a linear regression model to forecast prices in the future | Linear Regression | pandas, mplfinance, sklearn | [Yahoo Finance - Google Stock](https://finance.yahoo.com/quote/GOOG/history?p=GOOG)
 [Price of used cars](https://github.com/tw7366/Projects/blob/master/Projects/Price%20of%20used%20cars.ipynb) | Created a correlation matrix to see the weights of significance of each feature and trained a linear regression model to make a prediction | Linear Regression | sklearn, pandas, seaborn, matplotlib | [Kaggle - Used cars database](https://www.kaggle.com/orgesleka/used-cars-database)
 
+
+------------
+## __Data Analysis & Visualization__
+__Project__ | __Objective__ | __Description__ | __Library__ | __Source__
+------------|----------------|-----------------|-------------|-----------
+[2018 Data Professionals' Average Salaries](https://github.com/tw7366/Projects/blob/master/Projects/2018%20Data%20Professionals'%20Average%20Salaries.ipynb) | Before I got into the field of data science, I wanted to know the variety of jobs, the most used database systems, and average salaries. | Analyzed the most used DBMS(s) / popularity of data jobs / the most wanted job's average & median salaries in the U.S vs outside of the U.S. / job market locations / correlation between salaries and education | pandas, numpy, matplotlib, collections | [The 2018 Data Professionals Salary Survey Results](https://www.brentozar.com/archive/2018/01/2018-data-professionals-salary-survey-results/)
+[Covid-19](https://github.com/tw7366/Projects/blob/master/Projects/Covid-19.ipynb) | As the pandemic of Covid-19 continues, I hoped to draw some insights and trends through this analysis. | Analyzed countries and provinces with the most confirmed cases, tracked the progression of covid by continent (confirmed vs new), calculated mortality rate by continent, tracked the world's covid case progression (aggregate) | pandas, numpy, collections, matplotlib, seaborn | [Covid-19 Activity](https://data.world/covid-19-data-resource-hub/covid-19-case-counts)
