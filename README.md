@@ -3,7 +3,7 @@
 ## Table of contents
 * [About](#about)
 * [Web Scraping](#web-scraping)
-* [Data Cleansing](#data-cleansing)
+* [Data Cleansing & Debugging](#data-cleansing)
 * [Machine Learning](#machine-learning)
 
 
@@ -25,15 +25,18 @@ __Notebook__ | __Description__ | __Library__ | __Source__
 
 
 ------------
-## __Data Cleansing__
-While I worked on multiple projects, I've come to realize most of data analysts' task is preprocessing data. 
+## __Data Cleansing & Debugging__
+While I worked on multiple projects, I've come to realize most of data analysts' task is preprocessing data and debugging. 
 
-[Data preprocessing](https://www.geeksforgeeks.org/data-preprocessing-machine-learning-python/#:~:text=Data%20Preprocessing%20is%20a%20technique,not%20feasible%20for%20the%20analysis.) is a technique of cleansing and tidying raw data into a clean data set. 
+* [Data preprocessing](https://www.geeksforgeeks.org/data-preprocessing-machine-learning-python/#:~:text=Data%20Preprocessing%20is%20a%20technique,not%20feasible%20for%20the%20analysis.) is a technique of cleansing and tidying raw data into a clean data set. 
+
+* [Debugging](https://en.wikipedia.org/wiki/Debugging) is the process of finding and resolving bugs 
 
 __Notebook__ | __Description__ | __Library__ | __Source__
 ------------|-----------------|---------------|-------------
 [Cleansing and Tidying Data](https://github.com/tw7366/Projects/blob/master/Projects/Cleansing%20and%20Tidying%20Data.ipynb) | Transformed wide data to narrow data by unpivoting and melting dataframes | pandas, numpy | [Daniel Chen: Cleaning and Tidying Data in Pandas](https://www.youtube.com/watch?v=iYie42M1ZyU)
-
+[Covid-19](https://github.com/tw7366/Projects/blob/master/Projects/Covid-19.ipynb) | Performed light data cleaning and Debugging to fix graphs and functions | pandas, numpy, seaborn, matplotlib, collections, datetime | [Covid-19 Activity](https://data.world/covid-19-data-resource-hub/covid-19-case-counts)
+[Price of used cars](https://github.com/tw7366/Projects/blob/master/Projects/Price%20of%20used%20cars.ipynb) | Evaluated and selected relevant information from the huge volume of data, then more preprocessing was applied. This was probably the messiest data I had to deal with. | collections, pandas, numpy, sklearn |  [Kaggle - Used cars database](https://www.kaggle.com/orgesleka/used-cars-database)
 
 ------------
 ## __Machine Learning__
