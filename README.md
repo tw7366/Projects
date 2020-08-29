@@ -1,5 +1,6 @@
 # Data Analysis Portfolio
 
+------------
 ## Table of contents
 * [About](#about)
 * [Web Scraping](#web-scraping)
