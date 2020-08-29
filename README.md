@@ -64,7 +64,7 @@ __Project__ | __Objective__ | __Description__ | __Library__ | __Source__
 ## __SQL__
 __Project__ | __Purpose__ | __DBMS__
 ------------|-------------|---------
-[Valorant Stats](https://github.com/tw7366/Projects/blob/master/Projects/Valorant_Stats_SQL.py) | Aside from trying online quizzes, I wanted to create my own database to practice SQL. I thought it'd be fun to track video game statistics of friends and myself so I started a small SQL project | [MySQL](https://www.mysql.com/)
+[Valorant](https://github.com/tw7366/Projects/blob/master/Projects/Valorant_Stats_SQL.py) | Aside from trying online quizzes, I wanted to create my own database to practice SQL. I thought it'd be fun to track video game statistics of myself and my friends, so I started a small SQL project | [MySQL](https://www.mysql.com/)
 
 
 ------------
