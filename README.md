@@ -1,13 +1,73 @@
 # Data Analysis Portfolio
 
-##### __Who I am__
-  I am a recent graduate of the University of Toronto who have pursued a Bachelor of Science degree. Ever since I took computer science courses in my school, I always had an interest in learning programming. Additionally, earning a double major in mathematics and economics helped me to realize how much I love working with data, which ultimately led me to the field of data analysis. 
-  
-##### __Why this repository was created__
-  Having a solid background of statistics and some experience with python, I was able to grasp the fundamentals of data analysis quickly. With SQL and python, I could flexibly express my ideas and thoughts to process data in an advanced manner. To further my knowledge, I thought it would be great to work on some projects to practice and test my capability. Undoubtedly, it has delivered a significant improvement of my programming and critical thinking skills, thus I am continuing the lessons to polish and learn more complex concepts.
-  
-##### __What I am learning__
-  I started my lessons with Excel to learn the powerful tools like VLOOPUP, pivot table, and conditional formulas, then moved on to SQL. Using MySQL and PostgreSQL, I tracked statistics of a game I played with friends. By creating a database and tables from scratch, I was able to understand the optimal design of tables and eventually got comfortable with RDBMS. Currently, I'm more focused on learning python. Python is definitely an attractive language as it's far more complex and difficult due to its flexiblity. With it, I am able to perform data cleansing, web scraping, data tidying, quantitative & qualitative analysis, and visualization. Now, I am learning more advanced concepts of regression analysis and predictive analytics while polishing acquired skills. 
+------------
+## Table of contents
+* [About](#about)
+* [Web Scraping](#web-scraping)
+* [Data Cleansing & Debugging](#data-cleansing)
+* [Machine Learning](#machine-learning)
+* [Data Analysis & Visualization](#data-analysis)
+* [SQL](#sql)
+* [Contact](#contact)
 
-##### __My thoughts__
-  I like the fact that I'm able to write and build something that's more efficient and practical as I put more effort, thus it keeps me motivated. When it comes to learning, I believe one's attitude determine how far one goes. As I desire to continuously mature my knowledge and reach further, I am convinced that I can become a highly productive data analyst one day.
+------------
+## __About__
+  This repository was created to track my progress in data analysis and machine learning using python. While it demonstrates my capability, it also keeps me motivated and inspired.
+  
+  
+------------
+## __Web Scraping__
+I started off data analysis by collecting some publicly published data sets, but not all data of my interest were available, so I decided to learn web scraping.
+
+For websites with implementations of infinite scrolling and 'load more' buttons, [selenium](https://selenium-python.readthedocs.io/getting-started.html) was used to navigate; whereas, for websites with multiple pages, [beautiful soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) was enough to perform web scraping. 
+
+__Notebook__ | __Description__ | __Library__ | __Source__
+-------------|-----------------|-------------|-----------
+[Train to Busan IMDb Reviews](https://github.com/tw7366/Projects/blob/master/Projects/Train%20to%20Busan%20IMDb%20Reviews%20-%20NLP.ipynb) | Gathered reviews, titles, and ratings from the IMDb website - Have to click the "Load More" button | pandas, selenium, beaitufulsoup | [Train to Busan](https://www.imdb.com/title/tt5700672/reviews?ref_=tt_ov_rt)
+[Web Scraping](https://github.com/tw7366/Projects/blob/master/Projects/Web%20Scraping.ipynb) | Used loops to web scrape information from multiple pages / Imported an already existing table / Joined tables from multiple sources | pandas, beaitufulsoup, requests, selenium | [Newegg](https://www.newegg.ca/Desktop-Graphics-Cards/SubCategory/ID-48?Tid=7708&Order=3), [Steam](https://store.steampowered.com/search/?specials), [Sky Sports EPL](https://www.skysports.com/premier-league-table/2019), [Wikipedia - Population](https://en.wikipedia.org/wiki/Population_of_Canada_by_province_and_territory), [Wikipedia - PostalAbbreviation](https://en.wikipedia.org/wiki/Canadian_postal_abbreviations_for_provinces_and_territories), [Books to Scrape](http://books.toscrape.com/)
+
+
+------------
+## __Data Cleansing & Debugging__
+While I worked on multiple projects, I've come to realize most of data analysts' task is preprocessing data and debugging. 
+
+* [Data preprocessing](https://www.geeksforgeeks.org/data-preprocessing-machine-learning-python/#:~:text=Data%20Preprocessing%20is%20a%20technique,not%20feasible%20for%20the%20analysis.) is a technique of cleansing and tidying raw data into a clean data set. 
+
+* [Debugging](https://en.wikipedia.org/wiki/Debugging) is the process of finding and resolving bugs 
+
+__Notebook__ | __Description__ | __Library__ | __Source__
+-------------|-----------------|-------------|------------
+[Cleansing and Tidying Data](https://github.com/tw7366/Projects/blob/master/Projects/Cleansing%20and%20Tidying%20Data.ipynb) | Transformed wide data to narrow data by unpivoting and melting dataframes | pandas, numpy | [Daniel Chen: Cleaning and Tidying Data in Pandas](https://www.youtube.com/watch?v=iYie42M1ZyU)
+[Covid-19](https://github.com/tw7366/Projects/blob/master/Projects/Covid-19.ipynb) | Performed light data cleaning and Debugging to fix graphs and functions | pandas, numpy, collections | [Covid-19 Activity](https://data.world/covid-19-data-resource-hub/covid-19-case-counts)
+[Price of used cars](https://github.com/tw7366/Projects/blob/master/Projects/Price%20of%20used%20cars.ipynb) | Evaluated and selected relevant information from the huge volume of data, then more preprocessing was applied. This was probably the messiest data I had to deal with | collections, pandas, numpy, sklearn |  [Kaggle - Used cars database](https://www.kaggle.com/orgesleka/used-cars-database)
+
+
+------------
+## __Machine Learning__
+__Project__ | __Description__ | __Algorithm__ | __Library__ | __Source__
+------------|-----------------|-----------|-------------|-----------
+[Train to Busan IMDb Reviews](https://github.com/tw7366/Projects/blob/master/Projects/Train%20to%20Busan%20IMDb%20Reviews%20-%20NLP.ipynb) | Trained a doc2vec model to examine similarities between reviews  | [Natural Language Processing (NLP)](https://en.wikipedia.org/wiki/Neuro-linguistic_programming) | nltk, gensim, re | [Train to Busan](https://www.imdb.com/title/tt5700672/reviews?ref_=tt_ov_rt)
+[Google Stock Pricing](https://github.com/tw7366/Projects/blob/master/Projects/Google%20Stock%20Pricing%20-%20Prediction%20using%20regression.ipynb) | Created a OHLC chart to see the past trend and trained a linear regression model to forecast prices in the future | Linear Regression | pandas, mplfinance, sklearn | [Yahoo Finance - Google Stock](https://finance.yahoo.com/quote/GOOG/history?p=GOOG)
+[Price of used cars](https://github.com/tw7366/Projects/blob/master/Projects/Price%20of%20used%20cars.ipynb) | Created a correlation matrix to see the weights of significance of each feature and trained a linear regression model to make a prediction | Linear Regression | sklearn, pandas, seaborn, matplotlib | [Kaggle - Used cars database](https://www.kaggle.com/orgesleka/used-cars-database)
+
+
+------------
+## __Data Analysis & Visualization__
+__Project__ | __Objective__ | __Description__ | __Library__ | __Source__
+------------|---------------|-----------------|-------------|-----------
+[2018 Data Professionals' Average Salaries](https://github.com/tw7366/Projects/blob/master/Projects/2018%20Data%20Professionals'%20Average%20Salaries.ipynb) | I wanted to know the variety of jobs, the most used database systems, and average salaries. | Analyzed the most used DBMS(s) / popularity of data jobs / the most wanted job's average & median salaries in the U.S vs outside of the U.S. / job market locations / correlation between salaries and education | pandas, numpy, matplotlib, collections | [The 2018 Data Professionals Salary Survey Results](https://www.brentozar.com/archive/2018/01/2018-data-professionals-salary-survey-results/)
+[Covid-19](https://github.com/tw7366/Projects/blob/master/Projects/Covid-19.ipynb) | As the pandemic of Covid-19 continues, I hoped to draw some insights and trends through this analysis. | Analyzed countries and provinces with the most confirmed cases, tracked the progression of covid by continent (confirmed vs new), calculated mortality rate by continent, tracked the world's covid case progression (aggregate) | pandas, numpy, collections, matplotlib, seaborn | [Covid-19 Activity](https://data.world/covid-19-data-resource-hub/covid-19-case-counts)
+[Supermarket](https://github.com/tw7366/Projects/blob/master/Projects/Supermarket.ipynb) | Practice data analysis & visualization | Analyzed sales by gender, product line, branch, and time |  pandas, numpy, collections, matplotlib, seaborn | [Supermarket sales](https://www.kaggle.com/aungpyaeap/supermarket-sales)
+
+
+------------
+## __SQL__
+__Project__ | __Purpose__ | __DBMS__
+------------|-------------|---------
+[Valorant](https://github.com/tw7366/Projects/blob/master/Projects/Valorant_Stats_SQL.py) | Aside from trying online quizzes, I wanted to create my own database to practice SQL. I thought it'd be fun to track video game statistics of myself and my friends, so I started a small SQL project | [MySQL](https://www.mysql.com/)
+
+
+------------
+## __Contact__
+* [LinkedIn](https://www.linkedin.com/in/tw7366/)
+* E-mail: tw7366@hotmail.com
