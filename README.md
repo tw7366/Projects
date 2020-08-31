@@ -38,7 +38,7 @@ While I worked on multiple projects, I've come to realize most of data analysts'
 __Notebook__ | __Description__ | __Library__ | __Source__
 -------------|-----------------|-------------|------------
 [Cleansing and Tidying Data](https://github.com/tw7366/Projects/blob/master/Projects/Cleansing%20and%20Tidying%20Data.ipynb) | Transformed wide data to narrow data by unpivoting and melting dataframes | pandas, numpy | [Daniel Chen: Cleaning and Tidying Data in Pandas](https://www.youtube.com/watch?v=iYie42M1ZyU)
-[Covid-19](https://github.com/tw7366/Projects/blob/master/Projects/Covid-19.ipynb) | Performed light data cleaning and Debugging to fix graphs and functions | pandas, numpy, collections | [Covid-19 Activity](https://data.world/covid-19-data-resource-hub/covid-19-case-counts)
+[Covid-19](https://github.com/tw7366/Projects/blob/master/Projects/Covid-19.ipynb) | Performed light data cleaning and debugging to fix graphs and functions | pandas, numpy, collections | [Covid-19 Activity](https://data.world/covid-19-data-resource-hub/covid-19-case-counts)
 [Price of used cars](https://github.com/tw7366/Projects/blob/master/Projects/Price%20of%20used%20cars.ipynb) | Evaluated and selected relevant information from the huge volume of data, then more preprocessing was applied. This was probably the messiest data I had to deal with | collections, pandas, numpy, sklearn |  [Kaggle - Used cars database](https://www.kaggle.com/orgesleka/used-cars-database)
 
 
