@@ -73,11 +73,18 @@ add_performance = 'INSERT INTO performance (player_id, K, D, A, KDA, combat_scor
                   'econ_rating, MVP, WON, Attack, Defense, agent_id)' \
                   'VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)'
 
+
 # useful functions
-def person_stat(player):
-    # to find stats of a particular person
-    execution_code = ('SELECT player_list.name, AVG(K), AVG(D), AVG(A), AVG(KDA), AVG(combat_score), '
-                      'AVG(econ_rating), SUM(WON), agents_table.name as Agent '
+def person_by_agents(player):
+    """
+    :player: a players to see stats of
+    :return: average of all agents for the person
+    """
+    # to find stats of a particular person with all agents
+    execution_code = ('SELECT player_list.name, AVG(K) AS AVG_KILL, AVG(D) AS AVG_DEATH, AVG(A) AS AVG_ASSIST, '
+                      'ROUND(AVG(KDA), 2) AS AVG_KDA, AVG(combat_score) AS AVG_COMBAT, AVG(econ_rating) AS AVG_ECON, '
+                      'SUM(WON) AS GAME_WON, agents_table.name AS Agent, '
+                      'CONCAT(ROUND(SUM(WON)/COUNT(WON)*100, 1), "%") AS WIN_RATE '
                       'FROM performance '
                       'JOIN agents_table '
                       'ON agents_table.id = agent_id '
@@ -86,21 +93,46 @@ def person_stat(player):
                       'WHERE player_list.name = %s '
                       'GROUP BY agents_table.name')
     mycursor.execute(execution_code, (player,))
+    print(mycursor.column_names)
     for line in mycursor:
         print(line)
     return ''
 
 
-mycursor.execute('SELECT * '
-                 'FROM player_list;')
+def avg_all(players):
+    """
+    :players: a list of players to take average of
+    :return: average of all stats for everyone in the list
+    """
+    execution_code = ('SELECT player_list.name, ROUND(AVG(K), 2) AS AVG_KILL,'
+                      'ROUND(AVG(D), 2) AS AVG_DEATH, ROUND(AVG(A), 2) AS AVG_ASSIST, '
+                      'ROUND(AVG(KDA), 2) AS AVG_KDA, ROUND(AVG(combat_score), 2) AS AVG_COMBAT_SCORE,'
+                      'ROUND(AVG(econ_rating), 2) AS AVG_ECON_RATING, SUM(WON) AS GAMES_WON,'
+                      'COUNT(WON) AS GAMES_PLAYED, SUM(MVP) AS MVP,'
+                      'CONCAT(ROUND(SUM(WON)/COUNT(WON)*100, 1), "%") AS WIN_RATE '
+                      'FROM performance '
+                      'JOIN player_list '
+                      'ON player_list.id = player_id '
+                      'WHERE player_list.name in %s '
+                      'GROUP BY player_list.name '
+                      'ORDER BY AVG_KDA DESC')
+    mycursor.execute(execution_code, players)
+    print(mycursor.column_names)
+    for line in mycursor:
+        print(line)
+    return ''
 
-name_list = []
+
+mycursor.execute('SELECT * FROM player_list;')
+
 # creating a player list to iterate through
+name_list = [name[1] for name in mycursor]
+print(name_list)
 
-for name in mycursor:
-    name_list.append(name[1])
 for player in name_list:
-    print(person_stat(player))
+    print(person_by_agents(player))
+
+print(avg_all(name_list))
 
 # ADDING STATS
 # adding_game 1
@@ -200,4 +232,37 @@ mycursor.execute(add_performance, (5, 22, 11, 2, round(23 / 11.0, 2), 334, 69, F
 mycursor.execute(add_performance, (4, 17, 11, 2, round(19 / 11.0, 2), 232, 52, False, True, 10, 3, 4))
 mycursor.execute(add_performance, (2, 8, 14, 5, round(13 / 14.0, 2), 147, 42, False, True, 10, 3, 9))
 mycursor.execute(add_performance, (1, 8, 14, 8, round(16 / 14.0, 2), 149, 40, False, True, 10, 3, 8))
+
+# adding game 16
+mycursor.execute(add_performance, (6, 14, 17, 4, round(18 / 17.0, 2), 148, 52, False, False, 3, 3, 6))
+mycursor.execute(add_performance, (5, 7, 16, 4, round(11 / 16.0, 2), 129, 30, False, False, 3, 3, 3))
+mycursor.execute(add_performance, (2, 10, 17, 4, round(14 / 17.0, 2), 164, 41, False, False, 3, 3, 4))
+
+# adding game 17
+mycursor.execute(add_performance, (6, 27, 18, 5, round(32 / 18.0, 2), 362, 80, True, False, 3, 6, 11))
+mycursor.execute(add_performance, (5, 17, 15, 4, round(21 / 15.0, 2), 214, 49, False, False, 3, 6, 10))
+mycursor.execute(add_performance, (2, 12, 15, 1, round(13 / 15.0, 2), 161, 48, False, False, 3, 6, 5))
+
+# adding game 18
+mycursor.execute(add_performance, (6, 18, 15, 8, round(26 / 15.0, 2), 269, 61, True, False, 4, 3, 7))
+mycursor.execute(add_performance, (5, 9, 16, 1, round(10 / 16.0, 2), 126, 33, False, False, 4, 3, 3))
+mycursor.execute(add_performance, (4, 11, 17, 6, round(17 / 17.0, 2), 149, 34, False, False, 4, 3, 4))
+mycursor.execute(add_performance, (2, 12, 18, 2, round(14 / 18.0, 2), 170, 39, False, False, 4, 3, 6))
+mycursor.execute(add_performance, (1, 14, 13, 6, round(20 / 13.0, 2), 180, 45, False, False, 4, 3, 11))
+
+# adding game 19
+mycursor.execute(add_performance, (6, 26, 16, 7, round(33 / 16.0, 2), 311, 79, True, True, 4, 9, 2))
+mycursor.execute(add_performance, (5, 10, 19, 6, round(16 / 19.0, 2), 149, 40, False, True, 4, 9, 8))
+mycursor.execute(add_performance, (4, 20, 18, 5, round(25 / 18.0, 2), 240, 56, False, True, 4, 9, 6))
+mycursor.execute(add_performance, (2, 16, 17, 4, round(20 / 17.0, 2), 187, 57, False, True, 4, 9, 9))
+mycursor.execute(add_performance, (1, 22, 16, 6, round(28 / 16.0, 2), 265, 72, False, True, 4, 9, 10))
+
+# adding game 20
+mycursor.execute(add_performance, (6, 21, 14, 3, round(24 / 14.0, 2), 236, 62, False, True, 6, 7, 10))
+mycursor.execute(add_performance, (5, 16, 21, 5, round(21 / 21.0, 2), 218, 49, False, True, 6, 7, 7))
+mycursor.execute(add_performance, (4, 12, 17, 4, round(16 / 17.0, 2), 173, 35, False, True, 6, 7, 4))
+mycursor.execute(add_performance, (2, 15, 17, 0, round(15 / 17.0, 2), 161, 38, False, True, 6, 7, 6))
+mycursor.execute(add_performance, (1, 22, 15, 5, round(27 / 15.0, 2), 282, 75, True, True, 6, 7, 11))
+
 db.commit()
+
