@@ -104,6 +104,8 @@ def avg_all(players):
     :players: a list of players to take average of
     :return: average of all stats for everyone in the list
     """
+    # to know how many strings to replace
+    format_string = ', '.join(['%s'] * len(players))
     execution_code = ('SELECT player_list.name, ROUND(AVG(K), 2) AS AVG_KILL,'
                       'ROUND(AVG(D), 2) AS AVG_DEATH, ROUND(AVG(A), 2) AS AVG_ASSIST, '
                       'ROUND(AVG(KDA), 2) AS AVG_KDA, ROUND(AVG(combat_score), 2) AS AVG_COMBAT_SCORE,'
@@ -113,10 +115,10 @@ def avg_all(players):
                       'FROM performance '
                       'JOIN player_list '
                       'ON player_list.id = player_id '
-                      'WHERE player_list.name in %s '
+                      'WHERE player_list.name in ({}) '
                       'GROUP BY player_list.name '
-                      'ORDER BY AVG_KDA DESC')
-    mycursor.execute(execution_code, players)
+                      'ORDER BY AVG_KDA DESC').format(format_string)
+    mycursor.execute(execution_code, tuple(players))
     print(mycursor.column_names)
     for line in mycursor:
         print(line)
@@ -129,10 +131,11 @@ mycursor.execute('SELECT * FROM player_list;')
 name_list = [name[1] for name in mycursor]
 print(name_list)
 
+print(avg_all(name_list))
+
 for player in name_list:
     print(person_by_agents(player))
 
-print(avg_all(name_list))
 
 # ADDING STATS
 # adding_game 1
@@ -265,4 +268,3 @@ mycursor.execute(add_performance, (2, 15, 17, 0, round(15 / 17.0, 2), 161, 38, F
 mycursor.execute(add_performance, (1, 22, 15, 5, round(27 / 15.0, 2), 282, 75, True, True, 6, 7, 11))
 
 db.commit()
-
