@@ -65,7 +65,7 @@ __Project__ | __Objective__ | __Description__ | __Library__ | __Source__
 These are the past technical interview questions/assignments I've worked on 
  __Notebook__ | __Description__ | __Library__ |
 --------------|-----------------|-------------|
-[Creating a Timeline of Multiple Levels](https://github.com/tw7366/Projects/blob/master/Interviews/Interview%20Assignment%20-%20Creating%20a%20timeline%20of%20multiple%20levels.ipynb) | Given there are multiple events with start time and end time, I had to write a function to create a timeline by assigning a level to each event. Also, performed light data analysis| pandas, numpy, collections |
+[Creating a Timeline of Multiple Levels](https://github.com/tw7366/Projects/blob/master/Interviews/Interview%20Assignment%20-%20Creating%20a%20timeline%20of%20multiple%20levels.ipynb) | Given multiple events with start times and end times, I had to write a function to create a timeline by assigning a level to each event. Also, performed light data analysis| pandas, numpy, collections |
 
 
 ------------
