@@ -8,8 +8,8 @@
 * [Machine Learning](#machine-learning)
 * [Data Analysis & Visualization](#data-analysis)
 * [SQL](#sql)
+* [Interviews](#interviews)
 * [Contact](#contact)
-
 ------------
 ## __About__
   This repository was created to track my progress in data analysis and machine learning using python. While it demonstrates my capability, it also keeps me motivated and inspired.
@@ -58,6 +58,14 @@ __Project__ | __Objective__ | __Description__ | __Library__ | __Source__
 [2018 Data Professionals' Average Salaries](https://github.com/tw7366/Projects/blob/master/Projects/2018%20Data%20Professionals'%20Average%20Salaries.ipynb) | I wanted to know the variety of data related jobs, the most used database systems, and average salaries. | Analyzed the most used DBMS(s) / popularity of data jobs / the most wanted job's average & median salaries in the U.S vs outside of the U.S. / job market locations / correlation between salaries and education | pandas, numpy, matplotlib, collections | [The 2018 Data Professionals Salary Survey Results](https://www.brentozar.com/archive/2018/01/2018-data-professionals-salary-survey-results/)
 [Covid-19](https://github.com/tw7366/Projects/blob/master/Projects/Covid-19.ipynb) | As the pandemic of Covid-19 continues, I hoped to draw some insights and trends through this analysis. | Analyzed countries and provinces with the most confirmed cases / tracked the progression of covid by continent (confirmed vs new) / calculated mortality rate by continent / tracked the aggregate of covid-19 progression | pandas, numpy, collections, matplotlib, seaborn | [Covid-19 Activity](https://data.world/covid-19-data-resource-hub/covid-19-case-counts)
 [Supermarket](https://github.com/tw7366/Projects/blob/master/Projects/Supermarket.ipynb) | Practice data analysis & visualization | Analyzed sales by gender, product line, branch, and time |  pandas, numpy, collections, matplotlib, seaborn | [Supermarket sales](https://www.kaggle.com/aungpyaeap/supermarket-sales)
+
+
+------------
+## __Interviews__
+These are the past technical interview questions/assignments I've worked on 
+ __Notebook__ | __Description__ | __Library__ |
+--------------|-----------------|-------------|
+[Creating a Timeline of Multiple Levels](https://github.com/tw7366/Projects/blob/master/Interviews/Interview%20Assignment%20-%20Creating%20a%20timeline%20of%20multiple%20levels.ipynb) | Given there are multiple events with start time and end time, I had to write a function to create a timeline by assigning a level to each event. Also, performed light data analysis| pandas, numpy, collections |
 
 
 ------------
