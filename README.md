@@ -4,9 +4,9 @@
 ## Table of contents
 * [About](#about)
 * [Web Scraping](#web-scraping)
-* [Data Cleansing & Debugging](#data-cleansing)
+* [Data Cleaning and Debugging](#data-cleaning-and-debugging)
 * [Machine Learning](#machine-learning)
-* [Data Analysis & Visualization](#data-analysis)
+* [Data Analysis and Visualization](#data-analysis-and-visualization)
 * [SQL](#sql)
 * [Interviews](#interviews)
 * [Contact](#contact)
@@ -28,7 +28,7 @@ __Notebook__ | __Description__ | __Library__ | __Source__
 
 
 ------------
-## __Data Cleansing & Debugging__
+## __Data Cleaning and Debugging__
 While I worked on multiple projects, I've come to realize most of data analysts' task is preprocessing data and debugging. 
 
 * [Data preprocessing](https://www.geeksforgeeks.org/data-preprocessing-machine-learning-python/#:~:text=Data%20Preprocessing%20is%20a%20technique,not%20feasible%20for%20the%20analysis.) is a technique of cleansing and tidying raw data into a clean data set. 
@@ -46,14 +46,14 @@ __Notebook__ | __Description__ | __Library__ | __Source__
 ------------
 ## __Machine Learning__
 __Project__ | __Description__ | __Algorithm__ | __Library__ | __Source__
-------------|-----------------|-----------|-------------|-----------
-[Train to Busan IMDb Reviews](https://github.com/tw7366/Projects/blob/master/Projects/Train%20to%20Busan%20IMDb%20Reviews%20-%20NLP.ipynb) | Trained a doc2vec model to examine similarities between reviews  | [Natural Language Processing (NLP)](https://en.wikipedia.org/wiki/Neuro-linguistic_programming) | nltk, gensim, re | [Train to Busan](https://www.imdb.com/title/tt5700672/reviews?ref_=tt_ov_rt)
+------------|-----------------|---------------|-------------|-----------
+[Train to Busan IMDb Reviews](https://github.com/tw7366/Projects/blob/master/Projects/Train%20to%20Busan%20IMDb%20Reviews%20-%20NLP.ipynb) | Trained a doc2vec model to examine similarities between reviews  | [Natural Language Processing (NLP)](https://en.wikipedia.org/wiki/Neuro-linguistic_programming) | nltk, gensim, re | [IMDb - Train to Busan](https://www.imdb.com/title/tt5700672/reviews?ref_=tt_ov_rt)
 [Google Stock Pricing](https://github.com/tw7366/Projects/blob/master/Projects/Google%20Stock%20Pricing%20-%20Prediction%20using%20regression.ipynb) | Created a OHLC chart to see the past trend and trained a linear regression model to forecast prices in the future | [Linear Regression](https://en.wikipedia.org/wiki/Linear_regression#:~:text=In%20statistics%2C%20linear%20regression%20is,is%20called%20simple%20linear%20regression.) | pandas, mplfinance, sklearn | [Yahoo Finance - Google Stock](https://finance.yahoo.com/quote/GOOG/history?p=GOOG)
 [Price of used cars](https://github.com/tw7366/Projects/blob/master/Projects/Price%20of%20used%20cars.ipynb) | Created a correlation matrix to see the weight of significance of each feature and trained a linear regression model & a random forest regressor model to make predictions | Linear Regression, [Random Forest Regressor](https://heartbeat.fritz.ai/random-forest-regression-in-python-using-scikit-learn-9e9b147e2153) | sklearn, pandas, seaborn, matplotlib | [Kaggle - Used cars database](https://www.kaggle.com/orgesleka/used-cars-database)
-
+[Mushroom Classification](https://github.com/tw7366/Projects/blob/master/Projects/Mushroom%20Classification.ipynb) | Predicted types of mushrooms by using various classification models |  [RandomForestClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html) , [GaussianNB](https://scikit-learn.org/stable/modules/generated/sklearn.naive_bayes.GaussianNB.html), [SVC](https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html) | pandas, numpy, sklearn, matplotlib, mpl_toolkits | [Kaggle - Mushroom Classification](https://www.kaggle.com/uciml/mushroom-classification)
 
 ------------
-## __Data Analysis & Visualization__
+## __Data Analysis and Visualization__
 __Project__ | __Objective__ | __Description__ | __Library__ | __Source__
 ------------|---------------|-----------------|-------------|-----------
 [2018 Data Professionals' Average Salaries](https://github.com/tw7366/Projects/blob/master/Projects/2018%20Data%20Professionals'%20Average%20Salaries.ipynb) | I wanted to know the variety of data related jobs, the most used database systems, and average salaries. | Analyzed the most used DBMS(s) / popularity of data jobs / the most wanted job's average & median salaries in the U.S vs outside of the U.S. / job market locations / correlation between salaries and education | pandas, numpy, matplotlib, collections | [The 2018 Data Professionals Salary Survey Results](https://www.brentozar.com/archive/2018/01/2018-data-professionals-salary-survey-results/)
