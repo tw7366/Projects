@@ -4,9 +4,9 @@
 ## Table of contents
 * [About](#about)
 * [Web Scraping](#web-scraping)
-* [Data Cleansing & Debugging](#data-cleansing)
+* [Data Cleaning and Debugging](#data-cleaning-and-debugging)
 * [Machine Learning](#machine-learning)
-* [Data Analysis & Visualization](#data-analysis)
+* [Data Analysis and Visualization](#data-analysis-and-visualization)
 * [SQL](#sql)
 * [Interviews](#interviews)
 * [Contact](#contact)
@@ -28,7 +28,7 @@ __Notebook__ | __Description__ | __Library__ | __Source__
 
 
 ------------
-## __Data Cleansing & Debugging__
+## __Data Cleaning and Debugging__
 While I worked on multiple projects, I've come to realize most of data analysts' task is preprocessing data and debugging. 
 
 * [Data preprocessing](https://www.geeksforgeeks.org/data-preprocessing-machine-learning-python/#:~:text=Data%20Preprocessing%20is%20a%20technique,not%20feasible%20for%20the%20analysis.) is a technique of cleansing and tidying raw data into a clean data set. 
@@ -53,7 +53,7 @@ __Project__ | __Description__ | __Algorithm__ | __Library__ | __Source__
 [Mushroom Classification](https://github.com/tw7366/Projects/blob/master/Projects/Mushroom%20Classification.ipynb) | Predicted types of mushrooms by using various classification models |  [RandomForestClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html) , [GaussianNB](https://scikit-learn.org/stable/modules/generated/sklearn.naive_bayes.GaussianNB.html), [SVC](https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html) | pandas, numpy, sklearn, matplotlib, mpl_toolkits | [Kaggle - Mushroom Classification](https://www.kaggle.com/uciml/mushroom-classification)
 
 ------------
-## __Data Analysis & Visualization__
+## __Data Analysis and Visualization__
 __Project__ | __Objective__ | __Description__ | __Library__ | __Source__
 ------------|---------------|-----------------|-------------|-----------
 [2018 Data Professionals' Average Salaries](https://github.com/tw7366/Projects/blob/master/Projects/2018%20Data%20Professionals'%20Average%20Salaries.ipynb) | I wanted to know the variety of data related jobs, the most used database systems, and average salaries. | Analyzed the most used DBMS(s) / popularity of data jobs / the most wanted job's average & median salaries in the U.S vs outside of the U.S. / job market locations / correlation between salaries and education | pandas, numpy, matplotlib, collections | [The 2018 Data Professionals Salary Survey Results](https://www.brentozar.com/archive/2018/01/2018-data-professionals-salary-survey-results/)
