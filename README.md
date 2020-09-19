@@ -5,7 +5,9 @@
 * [About](#about)
 * [Web Scraping](#web-scraping)
 * [Data Cleaning and Debugging](#data-cleaning-and-debugging)
+  * [Preprocessing](https://www.geeksforgeeks.org/data-preprocessing-machine-learning-python/#:~:text=Data%20Preprocessing%20is%20a%20technique,not%20feasible%20for%20the%20analysis.)
 * [Machine Learning](#machine-learning)
+  * [Deep Learning](#deep-learning)
 * [Data Analysis and Visualization](#data-analysis-and-visualization)
 * [SQL](#sql)
 * [Interviews](#interviews)
@@ -52,6 +54,11 @@ __Project__ | __Description__ | __Algorithm__ | __Library__ | __Source__
 [Price of used cars](https://github.com/tw7366/Projects/blob/master/Projects/Price%20of%20used%20cars.ipynb) | Created a correlation matrix to see the weight of significance of each feature and trained a linear regression model & a random forest regressor model to make predictions | [Linear Regression](https://en.wikipedia.org/wiki/Linear_regression#:~:text=In%20statistics%2C%20linear%20regression%20is,is%20called%20simple%20linear%20regression.), [Random Forest Regressor](https://heartbeat.fritz.ai/random-forest-regression-in-python-using-scikit-learn-9e9b147e2153) | sklearn, pandas, seaborn, matplotlib | [Kaggle - Used cars database](https://www.kaggle.com/orgesleka/used-cars-database)
 [Mushroom Classification](https://github.com/tw7366/Projects/blob/master/Projects/Mushroom%20Classification.ipynb) | Predicted types of mushrooms by using various classification models |  [RandomForestClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html) , [GaussianNB](https://scikit-learn.org/stable/modules/generated/sklearn.naive_bayes.GaussianNB.html), [SVC](https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html) | pandas, numpy, sklearn | [Kaggle - Mushroom Classification](https://www.kaggle.com/uciml/mushroom-classification)
 [SMS Spam Classification](https://github.com/tw7366/Projects/blob/master/Projects/SMS%20Spam%20Classification.ipynb) | Classified whether SMS texts are spam or not by using RandomForestClassifier and MultinomialNB. Then, the models' performances were examined and compared. | [RandomForestClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html), [MultinomialNB](https://scikit-learn.org/stable/modules/generated/sklearn.naive_bayes.MultinomialNB.html), [make_pipeline](https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.make_pipeline.html), [TfidfVectorizer](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html) | pandas, numpy, sklearn, re | [SMS Spam Collection Dataset](https://www.kaggle.com/uciml/sms-spam-collection-dataset)
+
+## Deep Learning
+__Project__ | __Description__ | __Algorithm__ | __Library__ 
+------------|-----------------|---------------|------------
+[Digit Recognition](https://github.com/tw7366/digit_recognition) |  I wanted to create a very basic neural network model to predict a digit from an image | [The Sequential Model](https://keras.io/guides/sequential_model/) | [tensorflow](https://github.com/tensorflow/tensorflow), numpy, matplotlib
 
 
 ------------
