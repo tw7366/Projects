@@ -27,7 +27,7 @@ mycursor.execute('CREATE TABLE Agents_Table (id SMALLINT PRIMARY KEY AUTO_INCREM
 mycursor.execute('SHOW TABLES')
 for table in mycursor:
     print(table)
-
+#
 # Adding players to the player_list table
 add_player = "INSERT INTO player_list (name) VALUES (%s)"
 mycursor.execute(add_player, ('Austin',))
@@ -39,18 +39,18 @@ mycursor.execute(add_player, ('Taewoo',))
 
 # Adding agents to the agent_table
 add_agent = 'INSERT INTO agents_table (name) VALUES (%s)'
-mycursor.execute(add_agent, ('Breach',))
-mycursor.execute(add_agent, ('Brimstone',))
-mycursor.execute(add_agent, ('Cypher',))
-mycursor.execute(add_agent, ('Jett',))
-mycursor.execute(add_agent, ('Killjoy',))
-mycursor.execute(add_agent, ('Omen',))
-mycursor.execute(add_agent, ('Phoenix',))
-mycursor.execute(add_agent, ('Raze',))
-mycursor.execute(add_agent, ('Reyna',))
-mycursor.execute(add_agent, ('Sage',))
-mycursor.execute(add_agent, ('Sova',))
-mycursor.execute(add_agent, ('Viper',))
+mycursor.execute(add_agent, ('Breach',))  #1
+mycursor.execute(add_agent, ('Brimstone',))  #2
+mycursor.execute(add_agent, ('Cypher',))  #3
+mycursor.execute(add_agent, ('Jett',))  #4
+mycursor.execute(add_agent, ('Killjoy',))  #5
+mycursor.execute(add_agent, ('Omen',))  #6
+mycursor.execute(add_agent, ('Phoenix',))  #7
+mycursor.execute(add_agent, ('Raze',))  #8
+mycursor.execute(add_agent, ('Reyna',))  #9
+mycursor.execute(add_agent, ('Sage',))  #10
+mycursor.execute(add_agent, ('Sova',))  #11
+mycursor.execute(add_agent, ('Viper',))  #12
 db.commit()
 
 # track victories
@@ -123,6 +123,7 @@ def avg_all(players):
     for line in mycursor:
         print(line)
     return ''
+
 
 
 mycursor.execute('SELECT * FROM player_list;')
@@ -277,5 +278,38 @@ mycursor.execute(add_performance, (2, 13, 22, 8, round(21 / 22.0, 2), 156, 28, F
 mycursor.execute(add_performance, (6, 18, 14, 4, round(22 / 14.0, 2), 237, 67, False, True, 6, 7, 4))
 mycursor.execute(add_performance, (5, 16, 18, 3, round(19 / 18.0, 2), 207, 53, False, True, 6, 7, 1))
 mycursor.execute(add_performance, (4, 10, 16, 6, round(16 / 16.0, 2), 156, 36, False, True, 6, 7, 6))
-mycursor.execute(add_performance, (2, 24, 14, 7, round(31 / 14.0, 2), 329, 84, True, True, 9, 4, 9))
+mycursor.execute(add_performance, (2, 24, 14, 7, round(31 / 14.0, 2), 329, 84, True, True, 6, 7, 9))
+
+# # adding game 23
+mycursor.execute(add_performance, (6, 19, 16, 3, round(22 / 16.0, 2), 251, 87, True, False, 6, 4, 6))
+mycursor.execute(add_performance, (5, 9, 21, 2, round(11 / 21.0, 2), 129, 48, False, False, 6, 4, 12))
+mycursor.execute(add_performance, (4, 13, 15, 2, round(15 / 15.0, 2), 161, 43, False, False, 6, 4, 4))
+mycursor.execute(add_performance, (3, 11, 16, 6, round(17 / 16.0, 2), 146, 57, False, False, 6, 4, 2))
+
+# # adding game 24
+mycursor.execute(add_performance, (6, 16, 17, 2, round(18 / 17.0, 2), 228, 68, False, False, 5, 3, 8))
+mycursor.execute(add_performance, (5, 12, 17, 5, round(17 / 17.0, 2), 186, 46, False, False, 5, 3, 1))
+mycursor.execute(add_performance, (4, 11, 17, 4, round(15 / 17.0, 2), 166, 46, False, False, 5, 3, 4))
+mycursor.execute(add_performance, (3, 16, 17, 4, round(20 / 17.0, 2), 234, 80, True, False, 5, 3, 2))
+
+# # adding game 25
+mycursor.execute(add_performance, (6, 12, 15, 6, round(18 / 15.0, 2), 189, 55, False, False, 5, 3, 10))
+mycursor.execute(add_performance, (5, 16, 16, 2, round(18 / 16.0, 2), 218, 48, False, False, 5, 3, 6))
+mycursor.execute(add_performance, (4, 11, 13, 2, round(13 / 13.0, 2), 139, 45, False, False, 5, 3, 4))
+mycursor.execute(add_performance, (3, 19, 18, 0, round(19 / 18.0, 2), 275, 53, True, False, 5, 3, 2))
+mycursor.execute(add_performance, (2, 11, 16, 3, round(14 / 16.0, 2), 168, 45, False, False, 5, 3, 9))
+
+# # adding game 26
+mycursor.execute(add_performance, (6, 20, 19, 5, round(24 / 19.0, 2), 220, 55, False, False, 6, 6, 8))
+mycursor.execute(add_performance, (5, 27, 23, 3, round(27 / 26.0, 2), 264, 50, False, False, 6, 6, 6))
+mycursor.execute(add_performance, (4, 15, 20, 5, round(20 / 20.0, 2), 158, 36, False, False, 6, 6, 4))
+mycursor.execute(add_performance, (3, 29, 17, 7, round(36 / 17.0, 2), 298, 72, True, False, 6, 6, 2))
+mycursor.execute(add_performance, (2, 21, 16, 6, round(27 / 16.0, 2), 229, 59, False, False, 6, 6, 9))
+db.commit()
+
+# # adding game 27
+mycursor.execute(add_performance, (6, 30, 18, 5, round(35 / 18.0, 2), 291, 66, True, True, 3, 9, 6))
+mycursor.execute(add_performance, (5, 23, 21, 7, round(30 / 21.0, 2), 261, 66, False, True, 3, 9, 1))
+mycursor.execute(add_performance, (4, 19, 21, 5, round(24 / 21.0, 2), 219, 53, False, True, 3, 9, 4))
+mycursor.execute(add_performance, (2, 13, 22, 8, round(21 / 22.0, 2), 156, 28, False, True, 3, 9, 7))
 db.commit()
