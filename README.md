@@ -59,7 +59,7 @@ __Project__ | __Description__ | __Algorithm__ | __Library__ | __Source__
 __Project__ | __Description__ | __Algorithm__ | __Library__ 
 ------------|-----------------|---------------|------------
 [Digit Recognition](https://github.com/tw7366/digit_recognition) |  I wanted to create a very basic neural network model to predict a digit from an image | [The Sequential Model](https://keras.io/guides/sequential_model/) | [tensorflow](https://github.com/tensorflow/tensorflow), numpy, matplotlib
-[Sentiment Analysis of Movie Reviews](https://github.com/tw7366/Projects/blob/master/Projects/Sentiment%20Analysis%20of%20Movie%20Reviews.ipynb) | Classified whether movie reviews are positive or negative through sentiment analysis | The Sequential Model, [Tokenizer](https://www.tensorflow.org/api_docs/python/tf/keras/preprocessing/text/Tokenizer) | tensorflow, numpy, pandas, re 
+[Sentiment Analysis of Movie Reviews](https://github.com/tw7366/Sentiment-Analysis-of-Movie-Reviews/blob/master/Sentiment%20Analysis%20of%20Movie%20Reviews.ipynb) | Classified whether movie reviews are positive or negative through sentiment analysis | The Sequential Model, [Tokenizer](https://www.tensorflow.org/api_docs/python/tf/keras/preprocessing/text/Tokenizer) | tensorflow, numpy, pandas, re 
 
 ------------
 ## __Data Analysis and Visualization__
