@@ -50,7 +50,7 @@ __Notebook__ | __Description__ | __Library__ | __Source__
 ------------
 ## __Machine Learning__
 
-* ##### __Supervised Learning__
+* #### __Supervised Learning__
 
 __Project__ | __Description__ | __Topic__ | __Algorithm__ | __Library__ | __Source__
 ------------|-----------------|-----------|---------------|-------------|-----------
@@ -61,13 +61,13 @@ __Project__ | __Description__ | __Topic__ | __Algorithm__ | __Library__ | __Sour
 [SMS Spam Classification](https://github.com/tw7366/Projects/blob/master/Projects/SMS%20Spam%20Classification.ipynb) | Classified whether SMS texts are spam or not by using RandomForestClassifier and MultinomialNB. Then, the models' performances were examined and compared. | Classification |[RandomForestClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html), [MultinomialNB](https://scikit-learn.org/stable/modules/generated/sklearn.naive_bayes.MultinomialNB.html), [make_pipeline](https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.make_pipeline.html), [TfidfVectorizer](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html) | pandas, numpy, sklearn, re | [SMS Spam Collection Dataset](https://www.kaggle.com/uciml/sms-spam-collection-dataset)
 
 
-* ##### __Unsupervised Learning__
+* #### __Unsupervised Learning__
 
 __Project__ | __Description__ | __Topic__ | __Algorithm__ | __Library__ | __Source__
 ------------|-----------------|-----------|---------------|-------------|-----------
 
 
-## Deep Learning
+* #### __Deep Learning__
 __Project__ | __Description__ | __Algorithm__ | __Library__ 
 ------------|-----------------|---------------|------------
 [Digit Recognition](https://github.com/tw7366/digit_recognition) |  I wanted to create a very basic neural network model to predict a digit from an image | [The Sequential Model](https://keras.io/guides/sequential_model/) | [tensorflow](https://github.com/tensorflow/tensorflow), numpy, matplotlib
