@@ -65,7 +65,7 @@ __Project__ | __Description__ | __Topic__ | __Algorithm__ | __Library__ | __Sour
 
 __Project__ | __Description__ | __Topic__ | __Algorithm__ | __Library__ | __Source__
 ------------|-----------------|-----------|---------------|-------------|-----------
-Customer Segmentation | Based on data, place customers into different groups | [Clustering](https://en.wikipedia.org/wiki/Cluster_analysis) | [K-means Clustering](https://en.wikipedia.org/wiki/K-means_clustering) | sklearn, pandas, numpy, matplotlib | [Mall Customer Segmentation](https://www.kaggle.com/vjchoudhary7/customer-segmentation-tutorial-in-python)
+[Customer Segmentation](https://github.com/tw7366/Projects/blob/master/Projects/Mall%20Customer%20Segmentation.ipynb) | Based on data, place customers into different groups | [Clustering](https://en.wikipedia.org/wiki/Cluster_analysis) | [K-means Clustering](https://en.wikipedia.org/wiki/K-means_clustering) | sklearn, pandas, numpy, matplotlib | [Mall Customer Segmentation](https://www.kaggle.com/vjchoudhary7/customer-segmentation-tutorial-in-python)
 
 * #### __Deep Learning__
 __Project__ | __Description__ | __Algorithm__ | __Library__ 
