@@ -105,4 +105,4 @@ __Project__ | __Purpose__ | __DBMS__
 ------------
 ## __Contact__
 * [LinkedIn](https://www.linkedin.com/in/tw7366/)
-* E-mail: tw7366@hotmail.com
+* tw7366@hotmail.com
