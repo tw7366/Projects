@@ -47,7 +47,7 @@ __Notebook__ | __Description__ | __Library__ | __Source__
 [Covid-19](https://github.com/tw7366/Projects/blob/master/Projects/Covid-19.ipynb) | Performed light data cleaning and debugging to fix graphs and functions | pandas, numpy, collections | [Covid-19 Activity](https://data.world/covid-19-data-resource-hub/covid-19-case-counts)
 [Price of used cars](https://github.com/tw7366/Projects/blob/master/Projects/Price%20of%20used%20cars.ipynb) | Evaluated and selected relevant information from the huge volume of data, then more preprocessing was applied. | collections, pandas, numpy, sklearn |  [Kaggle - Used cars database](https://www.kaggle.com/orgesleka/used-cars-database)
 [Data Analyst](https://github.com/tw7366/Projects/blob/master/Projects/Data%20Analyst.ipynb) | Dealt with messy data and transformed it into a desirable form for data analysis. This was the messiest data I had to deal with! | numpy, pandas | [Kaggle - Data Analyst Jobs](https://www.kaggle.com/andrewmvd/data-analyst-jobs)
-[Suicide Rate](https://github.com/tw7366/Projects/blob/master/Projects/Suicide%20Rates%20in%20the%2021st%20Century.ipynb) | To practice dealing with messy and missing data | pandas, numpy, matplotlib | [Kaggle - Suicide Rates](https://www.kaggle.com/russellyates88/suicide-rates-overview-1985-to-2016)
+[Suicide Rate](https://github.com/tw7366/Projects/blob/master/Projects/Suicide%20Rates%20in%20the%2021st%20Century.ipynb) | Main purpose of the project was data mining, but I ended up doing more work on dealing with messy and missing data | pandas, numpy, matplotlib | [Kaggle - Suicide Rates](https://www.kaggle.com/russellyates88/suicide-rates-overview-1985-to-2016)
 
 
 ------------
@@ -105,4 +105,4 @@ __Project__ | __Purpose__ | __DBMS__
 ------------
 ## __Contact__
 * [LinkedIn](https://www.linkedin.com/in/tw7366/)
-* E-mail: tw7366@hotmail.com
+* tw7366@hotmail.com
