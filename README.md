@@ -74,7 +74,7 @@ __Project__ | __Description__ | __Topic__ | __Algorithm__ | __Library__ | __Sour
 __Project__ | __Description__ | __Algorithm__ | __Library__ 
 ------------|-----------------|---------------|------------
 [Digit Recognition](https://github.com/tw7366/digit_recognition) |  I wanted to create a very basic neural network model to predict a digit from an image | [The Sequential Model](https://keras.io/guides/sequential_model/) | [tensorflow](https://github.com/tensorflow/tensorflow), numpy, matplotlib
-[Sentiment Analysis of Movie Reviews](https://colab.research.google.com/drive/19WntYl02GGdh6VjuUNEe3RwmeagqM4eW#scrollTo=EfTmGY7IzQQK) | Classified whether movie reviews are positive or negative through sentiment analysis | The Sequential Model, [Tokenizer](https://www.tensorflow.org/api_docs/python/tf/keras/preprocessing/text/Tokenizer), [LSTM](https://www.tensorflow.org/api_docs/python/tf/keras/layers/LSTM) | tensorflow, numpy, pandas, re 
+[Sentiment Analysis of Movie Reviews](https://github.com/tw7366/Sentiment-Analysis-of-Movie-Reviews/blob/a1f22a4cea09dc48a018e932000f1f2a7e923d7d/Sentiment_Analysis_of_Movie_Reviews.ipynb) | Classified whether movie reviews are positive or negative through sentiment analysis | The Sequential Model, [Tokenizer](https://www.tensorflow.org/api_docs/python/tf/keras/preprocessing/text/Tokenizer), [LSTM](https://www.tensorflow.org/api_docs/python/tf/keras/layers/LSTM) | tensorflow, numpy, pandas, re 
 
 
 ------------
