@@ -18,12 +18,12 @@
 
 ------------
 ## __About__
-  This repository was created to track my progress in data analysis and machine learning using python. While it demonstrates my capability, it also keeps me motivated and inspired.
+  This repository is created to track my progress in data analysis and machine learning using python.
   
   
 ------------
 ## __Web Scraping__
-I started off data analysis by collecting some publicly published data sets, but not all data of my interest were available, so I decided to learn web scraping.
+I started off data analysis by collecting some publicly published datasets, but not all datasets of my interest were available, so I decided to learn web scraping.
 
 For websites with implementations of infinite scrolling and 'load more' buttons, [selenium](https://selenium-python.readthedocs.io/getting-started.html) was used to navigate; whereas, for websites with multiple pages, [beautiful soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) was enough to perform web scraping. 
 
