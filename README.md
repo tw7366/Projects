@@ -15,6 +15,8 @@
 ------------
 ## __About__
 This is a data analysis portfolio to demonstrate my skills and capability
+
+Practice projects can be found [here](https://github.com/tw7366/Data-Analysis-Practice-Using-Python)
   
 
 ------------
