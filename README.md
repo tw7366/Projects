@@ -3,12 +3,12 @@
 ------------
 ## Table of contents
 * [About](#about)
+* [Data Exploration](#data-exploration)
 * [Machine Learning](#machine-learning)
   * [Supervised Learning](#supervised-learning)
   * [Unsupervised Learning](#unsupervised-learning)
 * [Deep Learning](#deep-learning)
 * [SQL](#sql)
-* [Interviews](#interviews)
 * [Contact](#contact)
 
 
@@ -17,7 +17,16 @@
 This is a data analysis portfolio to demonstrate my skills and capability
 
 Practice projects can be found [here](https://github.com/tw7366/Data-Analysis-Practice-Using-Python)
-  
+
+
+------------
+## __Data Exploration__
+__Project__ | __Description__ | __Library__ | __Source__
+------------|-----------------|-------------|------------
+[Covid-19 Cases](https://github.com/tw7366/Projects/blob/master/Projects/Covid-19.ipynb) | Explored positive/death cases by continents, countries, and counties. | pandas, numpy, matplotlib, seabon, collections | [Covid-19](https://data.world/covid-19-data-resource-hub/covid-19-case-counts)
+[2018 Data Professionals' Average Salaries](https://github.com/tw7366/Projects/blob/master/Projects/2018%20Data%20Professionals'%20Average%20Salaries.ipynb) | Analyzed the most used DBMS(s) / popularity of data jobs / the most wanted job's average & median salaries in the U.S vs outside of the U.S. / job market locations / correlation between salaries and education | pandas, numpy, matplotlib, collections | [The 2018 Data Professionals Salary Survey Results](https://www.brentozar.com/archive/2018/01/2018-data-professionals-salary-survey-results/)
+[Statistics of Data Analysts](https://github.com/tw7366/Projects/blob/master/Projects/Data%20Analyst.ipynb) | Explored job locations, revenue and size of companies, preferred industries, salaries, ratings, and finally correlation of all features | pandas, numpy, matplotlib, seaborn | [Data Analyst Jobs](https://www.kaggle.com/andrewmvd/data-analyst-jobs)
+
 
 ------------
 ## __Machine Learning__
@@ -43,14 +52,6 @@ __Project__ | __Description__ | __Algorithm__ | __Library__
 ------------|-----------------|---------------|------------
 [Sentiment Analysis of Movie Reviews](https://github.com/tw7366/Sentiment-Analysis-of-Movie-Reviews/blob/master/Sentiment_Analysis_of_Movie_Reviews.ipynb) | Classified whether movie reviews are positive or negative through sentiment analysis | [LSTM](https://www.tensorflow.org/api_docs/python/tf/keras/layers/LSTM) | tensorflow, numpy, pandas, re
 [Balanced EMNIST Classification](https://github.com/tw7366/Pytorch-EMNIST-Classification/blob/main/Pytorch_EMNIST.ipynb) | Built a complex CNN model to classify 47 different outcomes of written letters and numbers (balanced set) | CNN | pytorch, argparse, time, collections 
-
-
-------------
-## __Interviews__
-These are the past technical interview questions/assignments I've worked on 
- __Notebook__ | __Description__ | __Library__ |
---------------|-----------------|-------------|
-[Creating a Timeline of Multiple Levels](https://github.com/tw7366/Projects/blob/master/Interviews/Interview%20Assignment%20-%20Creating%20a%20timeline%20of%20multiple%20levels.ipynb) | Given multiple events with start times and end times, I had to write a function to create a timeline by assigning a level to each event. Also, performed light data analysis| pandas, numpy, collections |
 
 
 ------------
