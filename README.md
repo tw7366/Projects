@@ -51,7 +51,7 @@ __Project__ | __Description__ | __Topic__ | __Algorithm__ | __Library__ | __Sour
 __Project__ | __Description__ | __Algorithm__ | __Library__ 
 ------------|-----------------|---------------|------------
 [Sentiment Analysis of Movie Reviews](https://github.com/tw7366/Sentiment-Analysis-of-Movie-Reviews/blob/master/Sentiment_Analysis_of_Movie_Reviews.ipynb) | Classified whether movie reviews are positive or negative through sentiment analysis | [LSTM](https://www.tensorflow.org/api_docs/python/tf/keras/layers/LSTM) | tensorflow, numpy, pandas, re, nltk
-[Balanced EMNIST Classification](https://github.com/tw7366/Pytorch-EMNIST-Classification/blob/main/Pytorch_EMNIST.ipynb) | Built a complex CNN model to classify 47 different outcomes of written letters and numbers (balanced set) | [CNN](https://en.wikipedia.org/wiki/Convolutional_neural_network) | pytorch, argparse, time, collections 
+[CNN model tuning with EMNIST](https://github.com/tw7366/Pytorch-EMNIST-Classification/blob/main/Pytorch_EMNIST.ipynb) | Built an advanced CNN model to observe performance vs time consumption and perform hyperparameter tuning | [CNN](https://en.wikipedia.org/wiki/Convolutional_neural_network) | pytorch, argparse, time, collections 
 
 
 ------------
